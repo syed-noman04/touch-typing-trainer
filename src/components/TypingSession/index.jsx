@@ -7,7 +7,7 @@ import ResultsModal from "../ResultsModal";
 import { calculateAccuracy, calculateWpm } from "../../utils/calculateStats";
 import { pickPhrase } from "../../data/pickPhrase";
 
-const SESSION_SECONDS = 300; // 5 minutes. Change to 10 while testing!
+const SESSION_SECONDS = 300; 
 const IGNORED_KEYS = ["Shift", "Control", "Alt", "Meta", "CapsLock", "Tab", "Escape"];
 
 function TypingSession({ lesson }) {
@@ -74,7 +74,6 @@ function TypingSession({ lesson }) {
       setHasError(false);
 
       if (cursor + 1 === phrase.length) {
-        // Phrase complete: load a different one and start from its first character
         setPhrase(pickPhrase(lesson.id, phrase));
         setCursor(0);
       } else {

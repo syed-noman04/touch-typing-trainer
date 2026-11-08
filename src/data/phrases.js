@@ -1,5 +1,3 @@
-// Practice phrases per lesson. Each is 12-16 characters (letters and spaces)
-// and uses only that lesson's keys plus the space bar.
 export const phrases = {
   left: [
     "sad fad as dad",

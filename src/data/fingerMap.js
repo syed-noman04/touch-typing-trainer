@@ -1,4 +1,3 @@
-// Which finger presses which key (the 8 home-row keys)
 export const homeRowKeys = [
   { key: "a", finger: "Left pinky", fingerClass: "pinky" },
   { key: "s", finger: "Left ring", fingerClass: "ring" },
