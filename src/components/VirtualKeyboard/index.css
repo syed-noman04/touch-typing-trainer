@@ -1,0 +1,91 @@
+.keyboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.keyboard-half {
+  display: flex;
+  gap: 8px;
+}
+
+.key-cap {
+  --finger: #e5e7eb;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: var(--finger);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.key-cap.pinky { --finger: #fecaca; }
+.key-cap.ring { --finger: #fde68a; }
+.key-cap.middle { --finger: #bbf7d0; }
+.key-cap.index { --finger: #bfdbfe; }
+
+.key-cap.dimmed {
+  opacity: 0.35;
+}
+
+.key-cap.next {
+  border-color: var(--primary);
+  outline: 4px solid rgba(59, 130, 246, 0.4);
+  transform: translateY(-4px) scale(1.08);
+}
+
+.key-letter {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.key-finger {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.space-bar {
+  width: min(100%, 360px);
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s;
+}
+
+.space-bar .key-letter {
+  font-size: 1rem;
+}
+
+.space-bar.next {
+  border-color: var(--primary);
+  outline: 4px solid rgba(59, 130, 246, 0.4);
+  transform: translateY(-4px) scale(1.03);
+}

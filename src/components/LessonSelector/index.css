@@ -1,0 +1,45 @@
+.lesson-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.lesson-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 130px;
+  padding: 12px 20px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.lesson-btn:hover {
+  border-color: var(--primary);
+}
+
+.lesson-btn:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.lesson-btn.selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+}
+
+.lesson-name {
+  font-weight: 600;
+}
+
+.lesson-keys {
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+}

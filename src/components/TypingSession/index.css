@@ -1,0 +1,30 @@
+.typing-box {
+  padding: 16px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.typing-box:focus {
+  border-color: var(--primary);
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.debug {
+  margin: 24px 0 0;
+  text-align: center;
+  font-family: monospace;
+  color: var(--text-muted);
+}
+
+.hint {
+  margin: 0 0 16px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.hint.time-up {
+  color: var(--wrong);
+  font-weight: 700;
+}

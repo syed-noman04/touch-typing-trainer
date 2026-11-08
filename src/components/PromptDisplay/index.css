@@ -1,0 +1,44 @@
+.prompt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 32px;
+  padding: 24px 16px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-family: "Courier New", monospace;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.char {
+  min-width: 1.6rem;
+  padding: 4px 2px;
+  text-align: center;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.char.correct {
+  color: var(--correct);
+}
+
+.char.current {
+  color: var(--text);
+  background: #dbeafe;
+  border-bottom-color: var(--primary);
+}
+
+.char.current.wrong {
+  background: #fee2e2;
+  border-bottom-color: var(--wrong);
+  color: var(--wrong);
+}
+
+.char.space {
+  border-bottom-color: var(--border);
+}

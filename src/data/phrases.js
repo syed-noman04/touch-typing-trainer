@@ -1,0 +1,42 @@
+// Practice phrases per lesson. Each is 12-16 characters (letters and spaces)
+// and uses only that lesson's keys plus the space bar.
+export const phrases = {
+  left: [
+    "sad fad as dad",
+    "fads add a sad",
+    "dad asks a fad",
+    "sass fad dads",
+    "as a sad dad",
+    "add fads as dad",
+    "ad fad sad as a",
+    "dad sad as fads",
+    "sad dads fad ad",
+    "a fad as sad ad",
+  ],
+  right: [
+    "jkl; jkl; jkl;",
+    "kj lk ;l jk l;",
+    "jj kk ll ;; jk",
+    "jkl lkj ;lk kj;",
+    "lk; jl; kj; lj",
+    "j;k l;j k;l jk",
+    "kl; jk; lj; kl;",
+    "jlk ;kj l;k jlk",
+    "lkj ;lk jkl ;jk",
+    "jk lj k; l; jkl",
+  ],
+  both: [
+    "a lad; ask dad",
+    "all fall; ask a",
+    "flask; a sad lad",
+    "a salad; ask dad",
+    "all lads fall",
+    "dad falls; ask",
+    "a flask falls",
+    "lads ask; fads",
+    "a sad lass falls",
+    "jf kd ls ;a jf",
+    "fj dk sl a; fj",
+    "as; ask all; fj",
+  ],
+};
